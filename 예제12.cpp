@@ -1,11 +1,18 @@
 #include <stdio.h>
 
 int main(){
-	int num = 1, sum = 0;
-	for( ; ; ){
-		sum+=num;
-		printf("%d±îÁöÀÇ ÇÕ: %d \n", num, sum);
-		num++;
-		if(num>5) break;
-	}
+	int num;
+	
+	do{
+		scanf(" %d", &num);
+		
+ 		if(num > 0){
+ 			if(num%2==0) 
+			 
+ 				printf("Â¦¼ö\n");
+			else
+			 
+		 		printf("È¦¼ö\n");
+		}
+	}while(num>0);
 }

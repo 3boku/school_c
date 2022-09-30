@@ -1,13 +1,13 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
-	int num=1, result=1;
+	int i = 0, sum = 0;
 	
-	for( ; ; ){
-		if(num%2!=0)
-			result*=num;
-		num++;
-		if(num>5) break;	
+	while(1){
+		i++;
+		if(i > 10)break;
+		if(i % 5 ==0)continue;
+		sum+=i;
 	}
-	printf("%d", result);
+	printf("sum = %d\n", sum);
 }
