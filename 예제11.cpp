@@ -1,14 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
-	int num1, num2, i;
+	int n, i=0;
+	printf("정수입력: ");
+	scanf(" %d", &n);
 	
-	printf("공배수를 구할 두 정수 입력 : ");
-	scanf(" %d %d", &num1, &num2);
-	
-	for (i = 1; i <= 100; i++){
-		if (i % num1 == 0 && i % num2 == 0)
-				printf("%d ", i);
-}
-
+	do{
+		printf("I love(?) progrmming\n", i);
+		i++; 
+	}while(i<n);
 }
