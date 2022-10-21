@@ -1,10 +1,8 @@
-#include<stdio.h>
+#include <stdio.h>
 
 int main(){
-	int num = 1;
-	while(num <= 5){
-		printf("반복내용 %d\n", num);
-		num++;
-	}
-	printf("반복문 종료후 num = %d \n", num);
-} 
+	int arr[5] = {10, 15, 85, 66, 20};
+	printf("%d\n", arr[0]);
+	printf("%d\n", arr[2]);
+	printf("%d\n", arr[7]);
+}

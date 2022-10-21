@@ -1,18 +1,14 @@
 #include<stdio.h>
 
-int main(void){
-	/*
-	n이 0일때 
-	int n = 0;
-	while(n<10){
-		printf("#");
-		n++;
-	}
-	*/
-	//n이 1일때 
-	int n = 1;
-	while(n=<10){
-		printf("#");
-		n++;
+int main(){
+	int num[3];
+	int i; 
+	
+	num[0] =10;
+	num[1] = 20;
+	num[2] = 30;
+	
+	for(i=0;i<3;i++){
+		printf("num[%d] = %d\n", i, num[i]);
 	}
 }
