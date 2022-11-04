@@ -1,13 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
 
 int main(){
-	int i, even, odd;
-	even = odd = 0;
-	for(i =1; i<=100;i++){
-		if(i%2==0)
-			even+=i;
-		else
-			odd+=i;
+	int data[6], i;
+	
+	for(i=0;i<6;i++){
+		printf("정수를 입력: ");
+		scanf(" %d", &data[i]);
 	}
-	printf("짝수합 = %d, 홀수합 = %d\n", even, odd);
-} 
+	for(i=0;i<6;i++){
+		printf("%d ", data[i]);
+	}	
+}

@@ -1,9 +1,12 @@
 #include<stdio.h>
 
 int main(){
-	int i=30;
-	while(i>=10){
-		printf("%d\n", i);
-		i-=2;
+	int a[10], i;
+	
+	for(i=0;i<10;i++){
+		a[i]=5;
 	}
+	
+	printf("a[5] = %d\n", a[5]);
+	printf("a[7] = %d\n", a[7]);
 }

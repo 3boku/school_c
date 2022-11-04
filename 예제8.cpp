@@ -1,11 +1,9 @@
 #include<stdio.h>
 
 int main(){
-	int i, n, fact=1;
-	scanf("%d", &n);
 	
-	for(i=1;i<=n;i++){
-		fact*=i;		
-	}
-	printf("%d!=%d\n", n, fact);
-} 
+	char str[10];
+	printf("당신의 이름은 무엇입니까? : ");
+	scanf("%s", str);
+	printf("안녕하세요 %s님", str);
+}

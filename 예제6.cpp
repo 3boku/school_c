@@ -1,14 +1,17 @@
 #include<stdio.h>
 
 int main(){
-	int i, count=0, sum = 0;
-		for(i=3;i<=50;i+=3){
-			printf("%4d", i);
-			sum=+i;
-			++count;
-			if(count%5==0){
-				printf("\n");
-			}
-		}
-		printf("\nsum = %d\n", sum);
+	int score[5];
+	int i, max=0;
+	
+	for(i=0;i<5;i++){
+		printf("%d번 학생의 프로그래밍 성적을 입력: ", i+1);
+		scanf(" %d", &score[i]);
+	}
+	for(i=0;i<5;i++){
+		if(max<score[i])
+			max=score[i];
+	}
+	printf("최고 점수 : %d \n", max);
+
 }

@@ -1,11 +1,16 @@
 #include<stdio.h>
 
 int main(){
-	int i, dan;
-	printf("원하는 단은? : ");
-	scanf("%d", &dan);
-	printf("\n***%d단***\n", dan);
-	for(i=1;i<10;i++){
-		printf("%d * %d = %d\n", dan, i, dan*i);
-	}
+	char str1[6]={'H', 'e', 'l', 'l', 'o', '\0'};
+	char str2[]= "world!";
+	int i;
+	
+	printf("%s\n", str1);
+	for(i=0;i<6;i++)
+		printf("%c", str2[i]);
+		//printf("%s", str2);
+	printf("\nstr1의 크기 : %d\n", sizeof(str1));
+	printf("str1의 크기 : %d\n", sizeof(str2));
+	str2[5]='~';
+	printf("%s\n", str2);
 }
